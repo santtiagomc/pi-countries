@@ -1,0 +1,76 @@
+.container2
+{
+
+    background-image: url("../Img/fondo4.png");
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.card{
+    border: 2px solid black;
+    margin-top: 12px;
+    border-radius: 20px;
+    height: 34rem;
+    width:  40rem;
+    backdrop-filter: sepia(90%) blur(1px) brightness(90%);
+}
+.containDetail {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    border-top: 2px solid black;
+}
+
+.detailtitle{
+    margin: 2px;
+}
+
+.detailCoun{
+    border-right: 2px solid black;
+    padding: 2px;
+    height: 20rem;
+    width: 20rem;
+}
+.activiInfo{
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.activiInfo h4{
+    margin: 2px 0 4px 0;
+    padding: 2px;
+}
+
+.detailActiv h2{
+    height: 2rem;
+}
+
+.contActv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+@media(max-width: 700px){
+    .card{
+        height: 31rem;
+        width: 22rem;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .image{
+        width: 8rem;
+        height: 4rem;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .detailCoun{
+        width: 12rem;
+    }
+}

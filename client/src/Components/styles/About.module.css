@@ -1,0 +1,36 @@
+.container{
+    background-image: url("../Img/fondo4.png");
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.card{
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter: invert(80%) blur(0.5px);
+    margin: 0 auto;
+}
+.text{
+    color: white;
+}
+.card h3{
+    margin: 2rem;
+}
+.tech{
+    height: 130px;
+    width: 550px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: Slider_slider__2vNNX 60s infinite alternate;
+    animation: Slider_slider__2vNNX 60s infinite alternate;
+}
+@media(max-width: 700px) {
+    .card{
+        width: 22rem;
+        height: 33rem;
+    }
+}

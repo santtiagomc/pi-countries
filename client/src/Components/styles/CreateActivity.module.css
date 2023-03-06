@@ -1,0 +1,91 @@
+.back{
+    background-image: url("../Img/fondo4.png");
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.container {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 44rem;
+    height: 33rem;
+    backdrop-filter: sepia(90%) blur(2px) brightness(90%);
+    padding: 4px;
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+.select{
+    margin: 34px 0 0;
+    border-bottom: 1px solid black;
+}
+.select label{
+    font-weight: 600;
+    padding: 4px;
+}
+.err{
+    display: contents;
+    color: red;
+    padding: 4px;
+    font-weight: 500;
+}
+.btn{
+    margin: 18px;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #2977ed;
+    color: white;
+}
+.countries{
+    word-break: break-all;
+}
+.options{
+    display: flex;
+    border: 1.5px solid black;
+    margin: 4px;
+    padding: 4px;
+    height: 80px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+.countriesSelect{
+    margin: 20px;
+}
+.btnx{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.ul{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.li{
+    list-style: none;
+    font-size: 14px;
+    margin: 0 2px 0 8px;
+}
+.link{
+    cursor: default;
+}
+@media (max-width: 700px) {
+    .container{
+        width: 22rem;
+        height: 42rem;
+    }
+    .options{
+        height: 10rem;
+    }
+    .ul{
+        height: 1rem;
+    }
+    .countries{
+        height: 34px;
+    }
+}

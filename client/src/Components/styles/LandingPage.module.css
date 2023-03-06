@@ -1,0 +1,68 @@
+.container {
+    background-image: url("../Img/fondo2.png");
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro {
+    width: 20rem;
+    color: black;
+    top: 40%;
+    left: 60%;
+    margin: 0 auto;
+    padding: 8rem;
+}
+
+.title {
+    margin: 0;
+    background-color: #e8dfcada;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 18px;
+    display: inline-block;
+    color: black;
+    font-size: larger;
+    background-color: #e8dfcada;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #008CBA;
+      color: white;
+  }
+.btn:hover {
+    animation: pulsate 2s ease-in-out ;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 40px #ffb300da, 0 0 50px #000000da;
+    }
+}
+
+@media (max-width:700px) {
+    .title{
+        width: 11rem;
+        padding: 8px;
+        font-size: large;
+        margin-top: 2rem;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .btn{
+        width: 8rem;
+        height: 3rem;
+        padding: 0;
+    }
+}

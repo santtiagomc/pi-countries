@@ -1,0 +1,143 @@
+.container{
+    background-image: url("../Img/fondo4.png");
+    min-height: 100vh;
+}
+/* 
+.backcard{
+    height: 100vh;
+} */
+.card {
+    display: inline-grid;
+    margin: 6px;
+    border: 1px solid black;
+    height: 160px;
+    width: 348px;
+    backdrop-filter: sepia(90%) blur(1px) brightness(90%);
+    border-radius: 14px;
+    text-decoration: none;
+}
+.filter h3 {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+.filter {
+    backdrop-filter: invert(80%) blur(0.5px);
+    float: right;
+    height: 35rem;
+    width: 11rem;
+}
+.filter select {
+    margin: 20px;
+}
+.refresh{
+    float: right;
+    margin: 20px 60px 35px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 36px;
+    background: rgb(255, 255, 255);
+}
+.refresh:hover {
+    transform: rotate(360deg);
+    transition: all 0.4s ease-in-out 0s;
+    background-color: rgba(255, 255, 255, 0.789);
+}
+.select{
+    padding: 6px;
+    border-radius: 10px;
+}
+.select:hover {
+    background-color: #2977ed;
+    color: white;
+}
+.settings{
+    display: none;
+}
+.refreshImg{
+    width: 2rem;
+}
+@media (max-width: 700px) {
+    .filter {
+        position: absolute;
+        top: 6rem;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        width: 100%;
+        height: 30rem;
+        transform: translateX(-100%);
+        transition: all .45s;
+        background: rgba(255, 255, 255, .25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+    }
+    .open {
+        z-index: 2;
+        transform: translateX(0);
+        padding-right: 0px;
+    }
+    .filterToggle {
+        display: flex;
+        width: 2rem;
+        margin-left: 20rem;
+        margin-top: -45px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 34px;
+        backdrop-filter: blur(10px);
+        padding: 6px;
+    }
+    .filterToggle .settings {
+        position: relative;
+        width: 38px;
+        height: 28px;
+        transition: all 0.45s ease-in-out;
+      }
+    
+    .filterToggle .settings::before {
+        width: 32px;
+        transform: translateY(-8px);
+        left: 0;
+    }
+
+    .filterToggle .settings::after {
+        width: 32px;
+        transform: translateY(8px);
+        left: 0;
+    }
+
+    .filterToggle.open .settings {
+        transform: rotate(180deg);
+        transition: all 0.4s ease-in-out 0s;
+    }
+    .settings{
+        display: block;
+    }
+    .filter h3{
+        color: black;
+        font-weight: bold;
+    }
+    .refresh{
+        border: 0;
+        height: 3rem;
+        width: 3rem;
+        background: rgba(255, 255, 255, 0.429);
+        margin: auto;
+    }
+    .refresh:hover {
+        transform: rotate(360deg);
+        transition: all 0.4s ease-in-out 0s;
+        background-color: rgba(255, 255, 255, 0.429);
+        color: white;
+        border-radius: 36px;
+    }
+    .loading{
+        width: -webkit-fill-available;
+    }
+}

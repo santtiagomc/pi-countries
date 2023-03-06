@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 2rem;
+    backdrop-filter: invert(20%) blur(0.6px);
+    margin-top: 1rem;
+}
+.icon{
+    width: 1rem;
+    height: 1rem;
+}
+.footerImg{
+    width: 2rem;
+    height: 2rem;
+}
+@media (max-width: 700px){
+    footer{
+        height: 2rem;
+        margin-top: 2rem;
+    }
+    .footerImg{
+        width: 2rem;
+        height: 2rem;
+    }
+}

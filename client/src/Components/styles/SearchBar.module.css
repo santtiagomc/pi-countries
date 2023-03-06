@@ -1,0 +1,19 @@
+.search{
+    margin-top: 18px;
+    border-bottom: 1px solid white;
+}
+.search button{
+    margin: 10px;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: #2977ed;
+    color: white;
+}
+.search input {
+    height: 20px;
+    padding: 4px;
+    border-radius: 20px;
+}
